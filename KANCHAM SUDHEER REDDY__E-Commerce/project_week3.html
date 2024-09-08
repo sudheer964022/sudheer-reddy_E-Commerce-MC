@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Web</title>
+    <link rel="stylesheet" href="project_week3.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="E-Commerce Logo">
+            </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Products">
+            <button type="submit">🔍</button>
+        </div>
+        <div class="header-links">
+            <div class="cart">
+                <a href="#" alt="add to cart"> 🛒 </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#phones">Mobiles</a></li>
+             <li><a href="#laptops">Laptops</a></li>
+            <li><a href="#" id="showOverlayBtn0" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- First slider Section -->
+    <h3 style="text-align: center; font-style: italic; font-size: 1.5em;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    background-clip: text; -webkit-background-clip: text;color: transparent;
+    -webkit-text-fill-color: transparent; padding-top: 120px;">Smart Phone</h3>
+    <div class="carousel" id="phones">
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="shop.html"><img src="img/s1.png" alt="Slide 1"></a>
+          </div>
+          <div class="item">
+            <a href="shop.html"><img src="img/s2.png" alt="Slide 2"></a>
+          </div>
+          <div class="item">
+            <a href="shop.html"><img src="img/s3.png" alt="Slide 3"></a>
+          </div>
+          <div class="item">
+            <a href="shop.html"><img src="img/s4.png" alt="Slide 4"></a>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <div class="carousel-control left" onclick="moveSlide1(-1)">&#10094;</div>
+        <div class="carousel-control right" onclick="moveSlide1(1)">&#10095;</div>
+    </div>
+    <!-- Second slider Section -->
+    <h3 style="
+    text-align: center; font-style: italic;font-size: 1.5em;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    background-clip: text;-webkit-background-clip: text;color: transparent;
+    -webkit-text-fill-color: transparent;" id="laptops">Laptops</h3>
+    <div class="images">
+        <div class="c-imgs">
+          <div class="imgl active">
+            <a href="shop.html" ><img src="img/s11.png" alt="Image 1"></a>
+          </div>
+          <div class="imgl">
+            <a href="shop.html" ><img src="img/s22.png" alt="Image 2"></a>
+          </div>
+          <div class="imgl">
+            <a href="shop.html"><img src="img/s33.png" alt="Image 3"></a>
+          </div>
+          <div class="imgl">
+            <a href="shop.html"><img src="img/s44.png" alt="Image 4"></a>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <div class="carousel-controls l" onclick="moveSlide2(-1)">&#10094;</div>
+        <div class="carousel-controls r" onclick="moveSlide2(1)">&#10095;</div>
+    </div>
+       <!-- slider3 -->
+       <h3 style="text-align: center; font-style: italic;font-size: 1.5em;
+       background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+       background-clip: text; -webkit-background-clip: text; color: transparent;
+       -webkit-text-fill-color: transparent;">Camera's & Watch's</h3>
+    <div class="c-carousel">
+        <div class="c-carousel-inner">
+            <div class="carousel-item active">
+                <a href="shop.html"><img src="img/s12.jpg" alt="Slide 1"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="shop.html"><img src="img/s13.png" alt="Slide 2"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="shop.html"><img src="img/s14.png" alt="Slide 3"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="shop.html"><img src="img/s15.png" alt="Slide 4"></a>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <div class="c-carousel-control left" onclick="moveCustomSlide(-1)">&#10094;</div>
+        <div class="c-carousel-control right" onclick="moveCustomSlide(1)">&#10095;</div>
+    </div>
+      <br>
+
+    <div class="redmi">
+             <div id="contactus">
+                 <div id="overlayHeader">
+                     C O N T A C T____D E T A I L S 
+                 </div><br><br><br><br><br><br><br><br><br><br>
+                 <h2>NAME: KANCHAM SUDHEER REDDY </h2>
+                 <h3>EMAIL ID :- sudheerkancham4@gmail.com</h3>
+                 <button class="contactusbtn" id="closeOverlayBtn0">✖</button>
+             </div>
+     <div>
+
+    <!-- JavaScript for First Slider -->
+    <script>
+        let index1 = 0;
+        const items1 = document.querySelectorAll('.carousel .item');
+        function moveSlide1(direction) {
+          items1[index1].classList.remove('active');
+          index1 = (index1 + direction + items1.length) % items1.length;
+          items1[index1].classList.add('active');
+        }
+        setInterval(() => {
+          moveSlide1(1);
+        }, 7000);
+    </script>
+
+    <!-- JavaScript for Second Slider -->
+    <script>
+        let index2 = 0;
+        const items2 = document.querySelectorAll('.images .imgl');
+       function moveSlide2(direction) {
+          items2[index2].classList.remove('active');
+          index2 = (index2 + direction + items2.length) % items2.length;
+          items2[index2].classList.add('active');
+        }
+        setInterval(() => {
+          moveSlide2(1);
+        }, 10000);
+    </script>
+  <!-- javascript for third slider -->
+    <script>
+      let cIndex = 0;
+      const cItems = document.querySelectorAll('.c-carousel .carousel-item');
+
+      function moveCustomSlide(direction) {
+          cItems[cIndex].classList.remove('active');
+          cIndex = (cIndex + direction + cItems.length) % cItems.length;
+          cItems[cIndex].classList.add('active');
+      }
+
+      setInterval(() => {
+          moveCustomSlide(1);
+      }, 7000);
+    </script>
+         <script>     
+             // contactus Overlay Script
+             const showOverlayBtn0 = document.getElementById('showOverlayBtn0');
+             const overlay0 = document.getElementById('contactus');
+             const closeOverlayBtn0 = document.getElementById('closeOverlayBtn0');
+
+             showOverlayBtn0.addEventListener('click', () => {
+                 overlay0.style.display = 'block';
+                 setTimeout(() => {
+                     overlay0.style.opacity = '1';
+                     overlay0.style.transform = 'translate(-50%, -50%) scale(1)';
+                 }, 50);
+             });
+
+             closeOverlayBtn0.addEventListener('click', () => {
+                 overlay0.style.opacity = '0';
+                 overlay0.style.transform = 'translate(-50%, -50%) scale(0.8)';
+                 setTimeout(() => {
+                     overlay0.style.display = 'none';
+                 }, 500);
+             });
+         </script> 
+</body>
+</html>
