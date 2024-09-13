@@ -11,5 +11,4 @@
 ![Screenshot_2024-09-08-15-11-10-989_com android chrome](https://github.com/user-attachments/assets/8d368365-3dd7-47b5-828f-ff798cff833b)
 ![Screenshot_2024-09-08-15-11-17-397_com android chrome](https://github.com/user-attachments/assets/85d71730-a871-4856-837d-8bf4c87d6ae6)
 ![Screenshot_2024-09-08-15-11-24-862_com android chrome](https://github.com/user-attachments/assets/005f5ab9-1678-4d16-a787-5e4f071be093)
-![Screenshot_2024-09-08-15-11-47-347_com android chrome](https://github.com/user-attachments/assets/ccf6abe3-debd-4583-846e-4![Screenshot_2024-09-08-15-11-56-288_com android chrome](https://github.com/user-attachments/assets/234a2f82-edf2-498b-8753-f82c44b930d9)
-7318a2471a4)
+
